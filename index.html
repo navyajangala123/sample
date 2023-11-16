@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label textarea {
+            vertical-align:middle;
+        }
+    </style>
+</head>
+<body bgcolor="lavender">
+    <h3 align="center">Registration form</h3> 
+    <form align="center">
+        <b>Name:</b><input type="text" name="name" placeholder="Enter your name"><br><br>
+        <b>Password:</b><input type="password" name="pass" placeholder="Enter a strong password" required/><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required/><br><br>
+        <b>Phone number:</b><input type="number" placeholder="Enter phone number" maxlength="10" required/><br><br>
+        <b>Gender:</b><input type="radio" name="1">Male</input>
+        <input type="radio" name="1">Female</input>
+        <input type="radio" name="1">Others</input><br><br>
+        <b>Languages known</b><input type="checkbox" name="a">Telugu</input>
+        <input type="checkbox" name="a">English</input>
+        <input type="checkbox" name="a">Hindi</input>
+        <input type="checkbox" name="a">Tamil</input><br><br>
+        <label><b>Address</b><textarea rows="10" colums="30"></textarea></label><br><br>
+        <button class="button" onclick="return validateForm()">Submit</button><br>
+    </form>
+</body>
+</html>
